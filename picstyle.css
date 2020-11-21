@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body  {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #050f36;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.sidenav{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: cornsilk;
+}
+.main {
+    height: 100%;
+    margin-left: 160px; 
+    font-size: 28px;
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.backgroundvid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -1;
+  display: hidden;
+}
+.tagvid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -2;
+  display: hidden;
+}
+.strawvid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -3;
+  display: hidden;
+}
+.leavesvid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -4;
+  display: hidden;
+}
+.flowervid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -5;
+  display: hidden;
+}
+.vinevid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -6;
+  display: hidden;
+}
+.bluevid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -7;
+  display: hidden;
+}
+.orangevid {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  z-index: -8;
+  display: hidden;
+}
+.image {
+  left: 10%;
+  top: 0%;
+  position: absolute;
+  z-index: 0;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+  }
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    z-index: 3;
+  }

@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link rel="stylesheet" href="picstyle.css">
+    <script src="pic.js"></script>
+<head>
+<body>
+
+  <!-- <div id="overlay" class="overlay" onclick="off()">
+    <div id="text" class="text">Overlay Text</div>
+  </div>
+  
+  <div style="padding:20px">
+    <h2>Overlay with Text</h2>
+    <button onclick="on()">Turn on overlay effect</button>
+  </div> -->
+
+
+<!-- background video -->
+    <video width="1100" height="750" id=backgroundvid class=backgroundvid controls>
+        <source src="background1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+<!-- tag video -->
+      <video width="1100" height="750" id=tagvid class=tagvid controls>
+        <source src="tag.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+<!-- strawberry video -->
+<video width="1100" height="750" id=strawvid class=strawvid controls>
+    <source src="strawberry.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<!-- leaves video -->
+<video width="1100" height="750" id=leavesvid class=leavesvid controls>
+    <source src="leaves.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> 
+<!-- vine video -->
+<video width="1100" height="750" id=vinevid class=vinevid controls>
+    <source src="vines.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<!-- bluebird video -->
+<video width="1100" height="750" id=bluevid class=bluevid controls>
+    <source src="bluebird.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<!-- orangebird video -->
+<video width="1100" height="750" id=orangevid class=orangevid controls>
+    <source src="orangebird.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<!--flowers video -->
+<video width="1100" height="750" id=flowervid class=flowervid controls>
+    <source src="flowers.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> 
+      
+    <div class="main"></div>
+    <div class="image">
+    <img id=straw src="straw.jpeg" id="strawberry" height="750" width="1100">
+    </div>
+ 
+    <div class="main">
+        <nav>
+            <div class="sidenav">
+                <a href="#" onclick="showHide3(); showPopup()">refresh</a>
+               <a href="#" onclick="showPopup('hello', '80%', '10%');playVid();showHideback(); showHide2()">background</a>
+               <br>
+               <br>
+                <a href="#" onclick="showPopup('hello', '48%', '45%'); playVidleaves(); showHideleaves(); showHideleaf(); showHidetags(); showHide2(); showHidestraws()">leaves</a>
+                <br>
+                <br>
+                <a href="#"onclick="showPopup('hello', '48%', '50%'); playVidflower(); showHideflower(); showHideleaf(); showHidetags(); showHide2(); showHidestraws(); showHideleave()">flowers</a>
+                <br>
+                <br>
+                <a href="#" onclick="showPopup('hello', '80%', '70%'); playVidvine(); showHidevine(); showHideleaf(); showHidetags(); showHide2(); showHidestraws(); showHideleave(); showHideflow()">vines</a>
+                <br>
+                <br>
+                <a href="#"onclick="showPopup('hello', '25%', '25%'); playVidblue(); showHideblue(); showHideleaf(); showHidetags(); showHide2(); showHidestraws(); showHideleave(); showHideflow(); showHidevinez()">blue bird</a>
+                <br>
+                <br>
+                <a href="#"onclick="showPopup('hello', '48%', '70%'); playVidorange(); showHideorange(); showHideleaf(); showHidetags(); showHide2(); showHidestraws(); showHideleave(); showHideflow(); showHidevinez(); showHidebluez()">orange bird</a>
+                <br>
+                <br>
+                <a href="#"onclick="showPopup('hello', '48%', '55%'); playVidstraw(); showHidestraw(); showHideleaf(); showHidetags(); showHide2()">strawberries</a>
+                <br>
+                <br>
+                <a href="#"onclick="showPopup('hello', '65%', '40%'); playVidtag(); showHidetag(); showHideleaf(); showHide2()">tag</a> 
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="popup" onclick="showPopup('hi', '50%', '75%')">
+        <span class="popuptext" id="myPopup">A Simple Popup!</span>
+      </div>
+</div>
+<body>
+<html>
